@@ -1,0 +1,36 @@
+body { 
+    font-size: 20px; 
+    line-height: 1.8; 
+}
+
+header, 
+nav, 
+main, 
+footer { 
+    margin: 1.25rem auto; 
+    max-width: 760px; 
+}
+
+header, 
+footer { 
+    background-color: green; 
+    color: #fff; 
+    text-align: center; 
+}
+
+header { 
+    padding: 1.5rem; 
+}
+
+h1 img { 
+    float: right; 
+    margin: 3px; 
+    border: 1px solid #000; 
+    background-color: green; 
+    width: 10%;
+    height: auto;
+  }
+
+h2 { 
+    text-align: center 
+}
