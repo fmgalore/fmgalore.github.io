@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="discription" content="Weather Site Fish Haven Idaho ">
+    <title>Soda Springs | Weather Site </title>
+    <link rel="icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400i%7cOswald:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+
+    <header>
+        <img class="logo-image" src="images/weather_icon.png" alt="Site Logo">
+        <div class="banner">
+            <h1> Soda Springs Idaho Happenings</h1>
+            <div class="motto">"A great site to navigate and know more about the sky in Soda Springs, Idaho before
+                indulging in any activities thereat."</div>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="soda_springs.html" class="active">Soda Springs</a></li>
+            <li><a href="fish_haven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>The Town of Soda Springs</h2>
+        <div class="town">
+            <picture>
+                <source srcset="images/springs750.PNG" media="(min-width: 32.5em) and (max-width: 55em)">
+                <source srcset="images/springs800.PNG" media="(min-width:55.1em)">
+                <img src="images/springs500.PNG" alt="Soda Springs Town Picture" class="town-img">
+            </picture>
+            <section class="weather-summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current-cond"></span></p>
+                <p>Temperature: <span id="temperature"></span>&deg;F</p>
+                <p>Humidity: <span id="humidity"></span>&deg;</p>
+                <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                <p>Wind Chill: <span id='chill'></span>&deg;F
+                </p>
+            </section>
+        </div>
+        <div class="forecast">
+            <h3>5 Day Forecast</h3>
+            <table>
+                <tr>
+                    <th id="wkday1"></th>
+                    <th id="wkday2"></th>
+                    <th id="wkday3"></th>
+                    <th id="wkday4"></th>
+                    <th id="wkday5"></th>
+                </tr>
+                <tbody>
+                    <tr>
+                        <td><img src="#" alt="#" id='icon1' class="forecast-image"><br><span id='temp1'></span>&deg;F
+                        </td>
+                        <td><img src="#" alt="#" id='icon2' class="forecast-image"><br><span id='temp2'></span>&deg;F
+                        </td>
+                        <td><img src="#" alt="#" id='icon3' class="forecast-image"><br><span id='temp3'></span>&deg;F
+                        </td>
+                        <td><img src="#" alt="#" id='icon4' class="forecast-image"><br><span id='temp4'></span>&deg;F
+                        </td>
+                        <td><img src="#" alt="#" id='icon5' class="forecast-image"><br><span id='temp5'></span>&deg;F
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <article class="town-article">
+            <img src="images/sodarecreation.jpg" alt="Family Recreation">
+            <h3>Recreation</h3>
+            <p id="author">By Ramilsky</p>
+            <p>Recreation can be so much fun.
+                Soda Springs has an abundance of recreational opportunities for individuals and families. Sure many of the bigger cities have every store you could ever want within 20 minutes, but Soda Springs has something that other communities dream of; unlimited recreational opportunities all right in town or within 20 minutes of town!
+
+Want to play golf or disc golf? We have a 9-hole golf course at the west enternance of town and an 18-hole disc golf course 5 minutes from downtown on the east side of town.
+
+Want to go camping? We have camping starting 15 minutes from town, with most camping being near a creek, river or reservoir.
+
+Looking for a good walk or run with beautiful scenery? You have the option of a half a dozen or more paths that start right within the City and many rural roads that run along the mountains and surrounding reservoirs and creeks.
+
+Looking for a leisure country drive? You can take a country drive less than 10 minutes from town with hours of backroads and beautiful scenery to take you on an adventure.
+
+Looking for shopping opportunities? Soda Springs has many local businesses and vendors to take care of your every day needs with "big-city" shopping within an hour drive and some of the most beautiful views to accompany you on the drive.
+
+            </p>
+            <p>If you are interested in donating to this tax deductable cause, or to volunteer for the event, please
+                contact one of our volunteer at 414-10401. </p>
+        </article>
+
+        <div class="events" id="soda-events"></div>
+
+        <div class="contact-info">
+            <img src="images/sodamap.PNG" alt="Soda Springs Map" class="preston-map">
+            <h3>Contact Info</h3>
+            <p>Southeast Idaho Happenings<br>
+                9 West 2nd South
+                Soda Springs, ID 83276</p>
+
+            <br>
+            <p>Phone #: 208-547-2600 Fax #: 208-547-2601
+                <br>
+                idahoweatherhappenings.org</p>
+            <br>
+
+            <img src="images/facebook-icon.png" alt="facebook icon" class="social-icon">
+            <img src="images/instagram-icon.gif" alt="instagram icon" class="social-icon">
+            <img src="images/twitter_icon.png" alt="twitter icon" class="social-icon">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;
+            <script>
+                document.write(new Date().getFullYear());
+            </script> Ramingsky | Ramil M. Capangpangan | Preston Weather Site |
+            <a href="http://www.byui.edu/online">BYU-Idaho Online Learning</a>
+        </p>
+        <div id="currentDate"></div>
+        <p>Weather API <a href="https://openweathermap.org/">openweathermap.org</a></p>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: ['Merriweather', 'Oswald']
+            }
+        });
+    </script>
+    <script src="js/current-date.js"></script>
+    <script src="js/toggleMenu.js"></script>
+    <script src="js/weatherSoda.js"></script>
+    <script src="js/forecastSoda.js"></script>
+    <script src="js/windchill.js"></script>
+    <script src="js/sodaEvents.js"></script>
+
+</body>
+
+</html>
